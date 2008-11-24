@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Crypt-Skip32-Base32Crockford
-version:             0.32
+version:             0.33
 abstract:            Create url-safe encodings of 32-bit values
 license:             perl
 author:              

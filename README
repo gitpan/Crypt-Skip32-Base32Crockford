@@ -7,7 +7,7 @@ SYNOPSIS
       my $key    = pack( 'H20', "112233445566778899AA" ); # Always 10 bytes!
       my $cipher = Crypt::Skip32::Base32Crockford->new($key);
       my $b32    = $cipher->encrypt_number_b32_crockford(3493209676); # 1PT4W80
-      my $number = $cipher->decrypt_number_b32_crockford('baJxAA'); # 3493209676
+      my $number = $cipher->decrypt_number_b32_crockford('1PT4W80'); # 3493209676
 
 DESCRIPTION
     This module melds together Crypt::Skip32 and Encode::Base32::Crockford.

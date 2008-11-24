@@ -2,7 +2,7 @@ package Crypt::Skip32::Base32Crockford;
 use strict;
 use warnings;
 use Encode::Base32::Crockford qw(base32_encode base32_decode);
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 use base 'Crypt::Skip32';
 
 sub encrypt_number_b32_crockford {
@@ -35,7 +35,7 @@ Crypt::Skip32::Base32Crockford - Create url-safe encodings of 32-bit values
   my $key    = pack( 'H20', "112233445566778899AA" ); # Always 10 bytes!
   my $cipher = Crypt::Skip32::Base32Crockford->new($key);
   my $b32    = $cipher->encrypt_number_b32_crockford(3493209676); # 1PT4W80
-  my $number = $cipher->decrypt_number_b32_crockford('baJxAA'); # 3493209676
+  my $number = $cipher->decrypt_number_b32_crockford('1PT4W80'); # 3493209676
 
 =head1 DESCRIPTION
 
